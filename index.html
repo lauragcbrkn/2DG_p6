@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>p6-gallery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+
+        }
+        img{
+            width: 100;
+        }
+        :root{
+            --color-primary:#131f41;
+            --color-secundary:#7d6c60;
+            --color-terciary:#364b39;
+            --color-bg:#e4bba0;
+            --color-black: #041f07;
+        }
+        .card_txt{
+            font-family:'Jost', sans-serif;
+            display:flex;
+            flex-direction: column;
+            padding: 1em 0 0 0;
+            height: 100%;
+
+        }
+        .gallery{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1em;
+        }
+        .card{
+            display: flex;
+            flex-basis: 26%;
+            flex-grow: 1;
+            flex-direction: column;
+            border: solid 0.3em var(--color-secundary);
+            background-color: var(--color-bg);
+            padding: 1em;
+        }
+      
+        .card_img{
+            width: 100%;
+            height: 224px;
+        }
+        .card_img img{
+            object-fit: cover;
+            height: 100%;
+        }
+
+        .card_txt h1{
+            font-size: 1em;
+            padding: 0 0 0.2em 0;
+            flex-grow: 0;
+            font-family:'Jost', sans-serif;
+            color: var(--color-primary);
+            font-style: bold;
+            font-weight: 900;
+            font-size: 19px;
+            letter-spacing: 0.25em;
+            
+        }
+        .card_txt h2{
+            background-color: bisque;
+            justify-content: flex-start;
+            font-size: 1.8em;
+            color: var(--color-secundary);
+            font-weight: 700;
+         
+        }
+        .card_txt p{
+            padding: 1em 0 0 0;
+            font-weight: 100;
+            font-size: 1.25em;
+        }
+        h1{
+            font-size: 1em;
+            color: var(--color-primary);
+            letter-spacing: 0.25em;
+            font-variant: small-caps;
+
+        }
+      
+      
+    </style>
+    
+   
+</head>
+<body>
+    <main>
+        <div class="gallery">
+            <div class="card">
+                <figure class="card_img">
+                <img src="img/1.jpeg" alt="">
+                </figure>
+                <header class="card_txt">
+                <h1>Raphael browsive</h1>
+                <h2>The Unicorn Purifies Water</h2>
+                <p>In this tapestry the unicorn kneels before a tall white fountain that has a pair of pheasants and a 
+                pair of goldfinches perched on its edge. Other animals both exotic and native to Europe lounge about,
+                while twelve hunters in the back of the scene discuss the discovery of their quarry. 
+                Flora and fauna play a significant role in the narratives of the Unicorn Tapestries. 
+                Plants prescribed in medieval herbals as antidotes to poisoning, such as sage, pot marigolds, 
+                and orange, are positioned near the stream, which is being purified by the unicorn's magic horn.
+                </p>
+                </header>
+            </div>   
+            <div class="card">
+                <figure class="card_img">
+                  <img src="img/2.jpeg" alt="">
+                    </figure>
+                    <header class="card_txt">
+                        <h1>Winslow Homer</h1>
+                        <h2>The Bather 1899</h2>
+                        <p>During his second visit to the Bahamas in 1898–99, Homer, then sixty-two years old, seems to have reveled
+                        in depicting the bodies of vigorous Black men glistening in warm water and sunlight. It is significant that Homer 
+                        foregrounded these individuals’ strength and sensuality in his art, especially in the context of the Bahamas, 
+                        which were promoted as a respite for sickly White tourists to regain their health. Inherent in the images is a 
+                        tension related to racial politics and class disparities, as the older White artist recorded the robust young Black men. 
+                        This apparent moment of leisure is situated beneath the Union Jack, an intentional reminder of the Bahamas’ 
+                        position as a British Crown colony.</p>
+                    </header>
+            </div>
+            <div class="card">
+                        <figure class="card_img">
+                          <img src="img/3.jpeg" alt="">
+                            </figure>
+                        <header class="card_txt">
+                                <h1>Qadir Hisari</h1>
+                                <h2>Calligraphic Galleon</h2>
+                                <p>The hull of this sailing ship comprises the names of the Seven Sleepers and their dog. 
+                                The tale of the Seven Sleepers, found in pre-Islamic Christian sources, concerns a group of men who sleep 
+                                for centuries within a cave, protected by God from religious persecution. Both hadith (sayings of the Prophet), 
+                                and tafsir (commentaries on the Qur'an) suggest that these verses from the Qur'an have protective qualities.
+                                </p>
+                        </header>
+            </div>
+                            
+            <div class="card">
+                        <figure class="card_img">       
+                            <img src="img/4.jpeg" alt="">      
+                        </figure>        
+                        <header class="card_txt">           
+                                <h1>Upper Rhenish</h1>
+                                <h2>Tapestry or Hanging</h2>
+                                <p>This tapestry fragment represents a fabulous lionlike beast with pointed teeth, clawed feet, 
+                                and a scaly rump. Such beasts, derived from those illustrated in classical texts like the Physiologus 
+                                and medieval bestiaries, represent vices. Here the figures posed with them seem to have tamed their libidinous cravings. 
+                                Such tapestries were displayed in homes providing decoration as well as insulation.
+                                </p>
+                        
+                        </header>              
+            </div>  
+                                    
+            <div class="card">
+                        <figure class="card_img">                
+                            <img src="img/5.jpeg" alt="">              
+                        </figure>                    
+                        <header class="card_txt">                  
+                                <h1>Paul Gauguin</h1>
+                                <h2>La Orana Maria</h2>
+                                <p>Before embarking on a series of pictures inspired by Polynesian religious beliefs, Gauguin devoted this, 
+                                his first major Tahitian canvas, to a Christian theme, describing it in a letter of March 1892: "An angel with 
+                                yellow wings reveals Mary and Jesus, both Tahitians, to two Tahitian women, nudes dressed in pareus, a sort of 
+                                cotton cloth printed with flowers that can be draped from the waist.</p>
+                                
+                        </header>                    
+            </div>
+            <div class="card">
+                        <figure class="card_img">                      
+                            <img src="img/6.jpeg" alt="">                      
+                        </figure>                            
+                        <header class="card_txt">                          
+                                <h1>6 A.D. 14–68</h1>
+                                <h2>Marble statue of an old woman</h2>
+                                <p>During the Hellenistic period, artists became concerned with the accurate representation of childhood, 
+                                old age, and even physical deformity. The range of subject matter was extended to include genre-like figures 
+                                from the fringes of society. Fine, large-scale statues of fishermen, peasants, and aged courtesans became valued 
+                                religious dedications, sometimes placed in a park-like setting within thesanctuary of the god. Although this statue 
+                                is known familiarly as The Old Market Woman, it probably represents an aged courtesan on her way to a festival of Dionysos, 
+                                the god of wine.</p>
+                                        
+                        </header>                            
+
+            </div>
+        </div>
+    </main>
+</body>
+</html>
